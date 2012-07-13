@@ -1,7 +1,7 @@
 var _ = require('/lib/underscore')._;
 var log = require('/lib/log');
 var app = require('/context');
-var Network = require('/services/network');
+var Network = require('/services/Network');
 var dp = 'dp';
 
 function LoginWindow(options) {
@@ -18,8 +18,8 @@ function LoginWindow(options) {
 		backgroundColor: '#2B76A2',
 		width: app.platformWidth,
 		height: headHeight+dp,
-		top: '0dp',
-		left: '0dp'
+		top: 0+dp,
+		left: 0+dp
 	});
 	var headerLabel = Ti.UI.createLabel({
 		text: 'Sign In',
@@ -36,14 +36,14 @@ function LoginWindow(options) {
 
 	var view = Ti.UI.createView({
 		width: '90%',
-		height: 'auto',
+		height: Ti.UI.FILL,
 		top: headHeight + dp
 	});
 
 	var emailInput = Ti.UI.createTextField({
 		top: 10+dp,
-		left: '0dp',
-		width: '100%',
+		left: 0+dp,
+		width: Ti.UI.FILL,
 		height: 45+dp,
 		hintText: 'Username',
 		autocorrect: false,
@@ -55,8 +55,8 @@ function LoginWindow(options) {
 
 	var passwordInput = Ti.UI.createTextField({
 		top: 65+dp,
-		left: '0dp',
-		width: '100%',
+		left: 0+dp,
+		width: Ti.UI.FILL,
 		height: 45+dp,
 		hintText: 'Password',
 		borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
@@ -89,9 +89,9 @@ function LoginWindow(options) {
 	   left: 0+dp,
 	   width: Ti.UI.FILL,
 	   height: Ti.UI.SIZE,
-	   font: {fontSize: 14},
+	   font: {fontSize: 14+dp},
 	   color: 'black',
-	   text: 'Create a free account at www.gobusybee.com'
+	   text: 'Create a free account at www.yourappname.com'
 	});
 
 	view.add(emailInput);
