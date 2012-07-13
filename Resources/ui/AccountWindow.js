@@ -38,7 +38,7 @@ function AccountWindow(title) {
 
 	var settingsLabel = Ti.UI.createLabel({
 		text: 'Your cool account settings here',
-		center:{ x: (app.platformWidth/2), y: 100+'dp' },
+		center:{ x: (app.platformWidth/2)+dp, y: 100+'dp' },
 		font: { fontSize: 18+dp, fontWeight: 'bold' },
 		color: 'blue',
 		textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER

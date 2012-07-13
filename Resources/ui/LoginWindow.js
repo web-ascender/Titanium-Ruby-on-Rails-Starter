@@ -16,7 +16,7 @@ function LoginWindow(options) {
 	var headHeight = 60;
 	var headerBar = Ti.UI.createView({
 		backgroundColor: '#2B76A2',
-		width: app.platformWidth,
+		width: app.Ti.UI.FILL,
 		height: headHeight+dp,
 		top: 0+dp,
 		left: 0+dp
