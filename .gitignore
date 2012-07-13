@@ -1,0 +1,9 @@
+tmp
+build
+Resources/images/.DS_Store
+build.log
+.fastdev.lock
+.project
+.DS_Store
+.project
+.settings
